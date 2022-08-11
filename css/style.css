@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+}
+.container {
+  background: hsl(217, 54%, 11%);
+  width: 100%;
+  height: 100%;
+  padding: 70px 0;
+}
+.container .content {
+  background: hsl(215, 32%, 27%);
+  width: 25%;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 10px 0;
+}
+
+/* view */
+.container .content .up {
+  width: 90%;
+  height: 35vh;
+  background-size: cover;
+  margin: 0 auto;
+  display: flex;
+  background-image: url(../img/image-equilibrium.jpg);
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.container .content .up img {
+  width: 15%;
+  opacity: 0;
+  background: hsl(178, 100%, 50%);
+  padding: 15vh 43%;
+  border-radius: 5px;
+}
+
+.container .content .up img:hover {
+  opacity: 1;
+  background: hsl(178deg 100% 50% / 50%);
+}
+/* view */
+
+.container .content .down {
+  width: 90%;
+  margin: 0px auto;
+  padding: 5px 0;
+}
+.container .content .down h3 {
+  font-size: 1rem;
+  color: hsl(0, 0%, 100%);
+  margin: 10px 0;
+}
+.container .content .down h3:hover {
+  color: hsl(178, 100%, 50%);
+}
+.container .content .down p {
+  font-size: 0.9rem;
+  color: hsl(215, 51%, 70%);
+  margin: 10px 0;
+  position: relative;
+}
+.container .content .down .time {
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.container .content .down .time p:first-child {
+  margin-left: 15px;
+  color: hsl(178, 100%, 50%);
+}
+.container .content .down .time p:first-child::before {
+  position: absolute;
+  content: "";
+  background-image: url(../img/icon-ethereum.svg);
+  width: 10px;
+  height: 18px;
+  left: -16px;
+}
+.container .content .down .time p:last-child:before {
+  position: absolute;
+  content: "";
+  background-image: url(../img/icon-clock.svg);
+  width: 18px;
+  height: 18px;
+  left: -20px;
+}
+.container .content hr {
+  width: 90%;
+  margin: 0 auto;
+  border: none;
+  height: 1.6px;
+  background-color: hsl(200deg 18% 46% / 45%);
+}
+.footer p {
+  position: relative;
+  margin: 20px auto 10px;
+  margin-left: 45px;
+  font-size: 0.7rem;
+  color: hsl(215, 51%, 70%);
+}
+.footer p span {
+  color: hsl(0, 0%, 100%);
+}
+.footer p span:hover {
+  color: hsl(178, 100%, 50%);
+}
+.footer p::before {
+  position: absolute;
+  content: "";
+  background-image: url(../img/image-avatar.png);
+  width: 25px;
+  height: 25px;
+  background-size: cover;
+  border: solid 1px white;
+  border-radius: 50%;
+  left: -35px;
+  top: -5px;
+}
+
+@media (min-width: 375px) and (max-width: 768px) {
+  .container {
+    width: 100%;
+    margin: 10px auto;
+  }
+  .container .content {
+    width: 65%;
+  }
+}
